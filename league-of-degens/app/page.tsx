@@ -7,23 +7,10 @@ export default async function Home() {
   const session = await auth();
   if (!session)
     return (
-      <div className="flex items-center justify-center">
-        Not signed in
+      <div className="flex items-center w-screen h-[50vh] justify-center">
         <SignIn />
       </div>
     );
 
-  return (
-    <div className="flex items-center justify-center">
-      <div className="hidden flex-col md:flex">
-        <div>
-          <div className="flex h-16 items-center px-4">
-            signed in
-            {/* <MainNav className="mx-6" /> */}
-            <SignOut />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return <div className="flex items-center justify-center">Test</div>;
 }

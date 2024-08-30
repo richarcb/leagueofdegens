@@ -10,8 +10,8 @@ import AuthButton from "@/components/AuthButton";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between mt-8">
-      <Button>Sign in</Button>
+    <div className="navbar-container flex justify-between mt-8 items-center">
+      <h2>Logo</h2>
       <div>
         <NavigationMenu className="">
           <NavigationMenuList className="flex">

@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SessionProvider } from "next-auth/react";
 import Navbar from "@/features/Navbar/Navbar";
+import AuthWrapper from "./AuthWrapper";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -27,8 +28,10 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navbar />
-        {children}
+        <AuthWrapper>
+          <Navbar />
+          {children}
+        </AuthWrapper>
       </body>
     </html>
   );
