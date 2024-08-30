@@ -2,7 +2,7 @@ import React from "react";
 import { auth, signIn } from "@/auth"; // Assuming auth is a function that fetches the session
 import { Button } from "./ui/button";
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
-import Avatar, { UserAvatar } from "./Avatar";
+import { UserAvatar } from "./UserAvatar";
 
 export async function AuthButton() {
   const session = await auth();

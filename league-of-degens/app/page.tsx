@@ -12,5 +12,9 @@ export default async function Home() {
       </div>
     );
 
-  return <div className="flex items-center justify-center">Test</div>;
+  return (
+    <div className="flex items-center justify-center">
+      Welcome to League of Degens
+    </div>
+  );
 }

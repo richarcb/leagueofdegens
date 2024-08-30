@@ -28,10 +28,8 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <AuthWrapper>
-          <Navbar />
-          {children}
-        </AuthWrapper>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
